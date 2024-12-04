@@ -82,9 +82,12 @@ export default function Index() {
           </CardHeader>
 
           <CardContent className="text-right">
-            <Link to={`/bookmarks/${user.id}`}>
-              <Button variant="link">View Details</Button>
-            </Link>
+            <Button
+              variant="link"
+              asChild
+            >
+              <Link to={`/bookmarks/${user.id}`}> View Details</Link>
+            </Button>
           </CardContent>
         </Card>
       ))}
